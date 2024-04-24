@@ -7,9 +7,26 @@ body {
   padding: 20px;
   background-color: #f7f7f7;
 }
+/* 
+@media (max-width: 800px) {
+  body {
+    padding: 2.5vw;
+  }
+} */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}
 
 span.unwrap {
   display: inline-block;
+}
+
+@media (max-width: 360px) {
+  span.unwrap {
+    display: inline;
+  }
 }
 
 h1, h2, h3 {
