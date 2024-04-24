@@ -10,6 +10,7 @@ body {
 
 span.unwrap {
   display: inline-block;
+  font-size: inherit;
 }
 
 h1, h2, h3 {
