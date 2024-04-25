@@ -123,7 +123,7 @@ a:hover {
   background-color: #ba0057;
   color: #fff;
   padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 18px;
   font-size: 2em;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -131,6 +131,13 @@ a:hover {
   /* animation: backgroundFade 4s infinite; */
   /* opacity: 0.8; */
 }
+
+@media (max-width: 400px) {
+  .button {
+    font-size: 1.2em;
+  }
+}
+
 
 .button:hover {
   background-color: #8f0043;
@@ -141,6 +148,7 @@ a:hover {
 .button-small {
   font-size: 1em;
   padding: 3px 6px;
+  border-radius: 6px;
 }
 
 @keyframes backgroundFade {
