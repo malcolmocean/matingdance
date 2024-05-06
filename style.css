@@ -128,8 +128,15 @@ a:hover {
   text-decoration: none;
   transition: background-color 0.3s;
   margin: 5px;
+  position: relative;
   /* animation: backgroundFade 4s infinite; */
   /* opacity: 0.8; */
+}
+
+.button.sold-out {
+  background-color: #ccc;
+  cursor: not-allowed;
+  min-width: 4em;
 }
 
 @media (max-width: 400px) {
@@ -138,11 +145,22 @@ a:hover {
   }
 }
 
-
 .button:hover {
   background-color: #8f0043;
   text-decoration: none;
   /* opacity: 1; */
+}
+
+.button.sold-out:hover {
+  background-color: #ccc;
+}
+.button.sold-out:hover:before {
+  content: "sold out";
+  color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .button-small {
